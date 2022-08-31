@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins",sans-serif;
+}
+body{
+    background-color: #31d6f4;
+    overflow-x: hidden;
+}
+.wrapper{
+    box-sizing: content-box;
+    width: 450px;
+    padding: 30px 40px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(86,66,0,0.2);
+}
+.game-container{
+    position: relative;
+    width: 100%;
+    display: grid; 
+    gap:15px;
+}
+.stats-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.stats-container span {
+  font-weight: 600;
+}
+.card-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.card-before,
+.card-after {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000000;
+  transition: transform 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.card-before {
+  background-color: #f4e531;
+  font-size: 36px;
+  font-weight: 600;
+}
+.card-after {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+}
+.card-container.flipped .card-before {
+  transform: rotateY(180deg);
+}
+.card-container.flipped .card-after {
+  transform: rotateY(0deg);
+}
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #31d6f4;
+  top: 0;
+}
+#top1{
+    position: absolute;
+    top: 0;
+    margin-top: 5vh;
+    font-size: 66px;
+    font-family: "Poppins",sans-serif;
+    color: azure;
+}
+#top2{
+    position: absolute;
+    top: 0;
+    margin-top: 20vh;
+    font-size: 48px;
+    font-family: "Poppins",sans-serif;
+     background: -webkit-linear-gradient(#eeff27, #00fc1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button {
+  border: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 25px 30px;
+  cursor: pointer;
+}
+#stop {
+  font-size: 26px;
+  display: block;
+  margin: 18px auto 0 auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+.controls-container button {
+  font-size: 26px;
+  font-family: monospace;
+  background-color: yellow;
+  box-shadow: 0 10px 16px rgba(86, 66, 0, 0.2);
+}
+.hide {
+  display: none;
+}
+#result {
+  text-align: center;
+}
+#result h2 {
+  font-size: 32px;
+}
+#result h4 {
+  font-size: 22px;
+  margin: 10px 0 16px 0;
+}

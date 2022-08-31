@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game JS by Syn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Головний блок-->
+    <div class="wrapper">
+        <!--Блок над блоком гри з статистикою кроків та таймером -->
+        <div class="stats-container">
+            <div id="moves-count"></div>
+            <div id="time"></div>
+        </div>
+        <!--Блок ігрової зони-->
+        <div class="game-container"></div>
+        <button id="stop" class="hide">Finish</button>
+    </div>
+    <!--Блок доп інфи, закриває ігрове поле-->
+    <div class="controls-container">
+        <p id="result"></p>
+        <h1 id="top1">Memory Game</h1>
+        <h3 id="top2">Flag edition</h3>
+        <button id="start">Start Game</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
