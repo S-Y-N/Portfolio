@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>КіноHUB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app" class="container">
+            <h1 class="text-center">Кіно<span id="hub">hub</span> - місце твоїх улюблених фільмів та серіалів</h1>
+            <br>
+
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <input type="text" class="form-control" id="search_field" placeholder="Введіть назву фільму/серіалу">
+
+                    <input type="radio" class="type" name="type" value="all" checked id="all"> <label for="all">Все</label> &nbsp;
+                    <input type="radio" class="type" name="type" value="movie" id="movie"> <label for="movie">Фільми</label> &nbsp;
+                    <input type="radio" class="type" name="type" value="series" id="series"> <label for="series">Серіали</label>
+                    <input type="radio" class="type" name="type" value="episode" id="episode"> <label for="episode">Епізоди</label>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="loading">
+                <p class="text-center">Грій попкорн та влаштовуйся зручніше</p>
+            </div>
+            <div id="loading1">
+                <p class="text-center">Нічого не знайдено</p>
+            </div>
+            <div id="movies" class="row">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
